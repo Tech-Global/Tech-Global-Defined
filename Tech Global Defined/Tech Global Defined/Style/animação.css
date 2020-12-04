@@ -1,0 +1,102 @@
+/* ANIMAÇÃO DE INTRODUÇÃO */
+
+@keyframes intro {
+    0% {
+        opacity: 0;
+        margin-top: 400px;
+    }
+    12.5% {
+        opacity: .1;
+        margin-top: 350px;
+    }
+    25% {
+        opacity: 0.3;
+        margin-top: 300px;
+    }
+    37.5% {
+        opacity: .5;
+        margin-top: 250px;
+    }
+    50% {
+        opacity: 0.6;
+        margin-top: 200px;
+    }
+    62.5% {
+        opacity: .7;
+        margin-top: 150px;
+    }
+    75% {
+        opacity: 0.8;
+        margin-top: 100px;
+    }
+    87.5% {
+        opacity: .9;
+        margin-top: 50px;
+    }
+    100% {
+        opacity: 1;
+        margin-top: 0;
+    }
+}
+
+
+/* ANIMAÇÃO DOS BOTÕES */
+
+button { 
+    display:block; position:relative; background:#ffc; width:300px; height:180px
+}
+
+button::before, button::after { content:""; display:block; box-sizing:border-box;
+    position:absolute;z-index:5; pointer-events: none; 
+    width:0; height:0; opacity:0; border:3px solid white; border-radius: 5px;
+}
+
+button::before {
+    border-left:none; border-bottom:none; left:0; top:0;
+    transition:width .5s linear 1.5s, height .5s linear 1s, opacity .1s 2s
+}
+
+button::after {
+    border-top:none; border-right:none; right:0; bottom:0;
+    transition:width .5s linear .5s, height .5s linear, opacity .1s 1s 
+}
+
+button:hover::before, button:hover::after {
+    width:100%; height:100%; opacity:1 
+}
+
+button:hover::before {
+    transition:width .5s linear, height .5s linear .5s, opacity .1s
+}
+
+button:hover::after {
+    transition:width .5s linear 1s, height .5s linear 1.5s, opacity .1s 1s
+}
+
+
+/* ANIMAÇÃO FORMULARIO */
+
+.arise {
+    background: #0043E0;
+    padding: 1rem;
+    border-radius: 10px;
+  
+    clip-path: circle(4% at 7.8% 9%);
+    transition: all .3s ease-in-out;
+    cursor: pointer;
+  }
+  
+  .arise:hover {
+    clip-path: circle(100%);
+  }
+  
+  .arise .icon-form {
+    float: left;
+    font-weight: bold;
+    text-align: left;
+  }
+  
+  .arise .icon-form {
+    padding: 0;
+    margin-left: .3rem;
+  }

@@ -1,0 +1,81 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    height: 100vh;
+    overflow: hidden;
+}
+
+body {
+    background: black;
+}
+
+#video_back {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+}
+
+video {
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+section #bloco_txt {
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+
+    top: 0;
+}
+
+section .bloco1 {
+    height: 80vh;
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    color: white;
+    opacity: .6;
+}
+
+section .bloco1 img {
+    width: 70vw;
+    height: 70vh;
+
+    margin-bottom: -15vh;
+}
+
+section .bloco2 {
+    height: 20vh;
+
+    display: flex;
+    align-items: center;
+    margin: auto;
+}
+
+section .bloco2 button {
+    height: 30px;
+    border-radius: 5px;
+    border: 0;
+    width: 10vw;
+    text-align: center;
+    margin: auto;
+    font-size: 1.1rem;
+
+    background-color: darkcyan;
+}
+
+section .bloco2 button a {
+    text-decoration: none;
+    color: black;
+}
